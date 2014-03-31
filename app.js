@@ -86,15 +86,17 @@ var showInfoForm = function(e) {
   document.getElementById('info_form').style.display = "block";
   document.getElementById('info_form').onsubmit = submitInfoForm;
   document.getElementById('canvas').style.display = "none";
+  document.location.hash = "#settings";
 };
 
 var hideInfoForm = function(e) {
   document.getElementById('info_form').style.display = "none";
   document.getElementById('canvas').style.display = "block";
+  document.location.hash = "";
 };
 
 window.onload = function() {
-  if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null) {
+  if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null || document.location.hash === "#settings") {
     showInfoForm();
   } else {
     renderLife();
