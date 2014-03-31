@@ -5,7 +5,7 @@ var act_table = {
     "male_life_exp": 75.90,
     "female_death_prob": 0.005728,
     "females_remaining": 100000,
-    "life_expectancy": 80.81
+    "female_life_exp": 80.81
   },
 
   "1": {
@@ -14,7 +14,7 @@ var act_table = {
     "male_life_exp": 75.43,
     "female_death_prob": 0.000373,
     "females_remaining": 99427,
-    "life_expectancy": 80.28
+    "female_life_exp": 80.28
   },
 
   "2": {
@@ -23,7 +23,7 @@ var act_table = {
     "male_life_exp": 74.46,
     "female_death_prob": 0.000241,
     "females_remaining": 99390,
-    "life_expectancy": 79.31
+    "female_life_exp": 79.31
   },
 
   "3": {
@@ -32,7 +32,7 @@ var act_table = {
     "male_life_exp": 73.48,
     "female_death_prob": 0.000186,
     "females_remaining": 99366,
-    "life_expectancy": 78.32
+    "female_life_exp": 78.32
   },
 
   "4": {
@@ -41,7 +41,7 @@ var act_table = {
     "male_life_exp": 72.50,
     "female_death_prob": 0.000150,
     "females_remaining": 99348,
-    "life_expectancy": 77.34
+    "female_life_exp": 77.34
   },
 
   "5": {
@@ -50,7 +50,7 @@ var act_table = {
     "male_life_exp": 71.51,
     "female_death_prob": 0.000133,
     "females_remaining": 99333,
-    "life_expectancy": 76.35
+    "female_life_exp": 76.35
   },
 
   "6": {
@@ -59,7 +59,7 @@ var act_table = {
     "male_life_exp": 70.53,
     "female_death_prob": 0.000121,
     "females_remaining": 99320,
-    "life_expectancy": 75.36
+    "female_life_exp": 75.36
   },
 
   "7": {
@@ -68,7 +68,7 @@ var act_table = {
     "male_life_exp": 69.54,
     "female_death_prob": 0.000112,
     "females_remaining": 99308,
-    "life_expectancy": 74.37
+    "female_life_exp": 74.37
   },
 
   "8": {
@@ -77,7 +77,7 @@ var act_table = {
     "male_life_exp": 68.55,
     "female_death_prob": 0.000104,
     "females_remaining": 99296,
-    "life_expectancy": 73.38
+    "female_life_exp": 73.38
   },
 
   "9": {
@@ -86,7 +86,7 @@ var act_table = {
     "male_life_exp": 67.55,
     "female_death_prob": 0.000098,
     "females_remaining": 99286,
-    "life_expectancy": 72.39
+    "female_life_exp": 72.39
   },
 
   "10": {
@@ -95,7 +95,7 @@ var act_table = {
     "male_life_exp": 66.56,
     "female_death_prob": 0.000094,
     "females_remaining": 99276,
-    "life_expectancy": 71.39
+    "female_life_exp": 71.39
   },
 
   "11": {
@@ -104,7 +104,7 @@ var act_table = {
     "male_life_exp": 65.57,
     "female_death_prob": 0.000098,
     "females_remaining": 99267,
-    "life_expectancy": 70.40
+    "female_life_exp": 70.40
   },
 
   "12": {
@@ -113,7 +113,7 @@ var act_table = {
     "male_life_exp": 64.57,
     "female_death_prob": 0.000114,
     "females_remaining": 99257,
-    "life_expectancy": 69.41
+    "female_life_exp": 69.41
   },
 
   "13": {
@@ -122,7 +122,7 @@ var act_table = {
     "male_life_exp": 63.58,
     "female_death_prob": 0.000143,
     "females_remaining": 99246,
-    "life_expectancy": 68.41
+    "female_life_exp": 68.41
   },
 
   "14": {
@@ -131,7 +131,7 @@ var act_table = {
     "male_life_exp": 62.60,
     "female_death_prob": 0.000183,
     "females_remaining": 99232,
-    "life_expectancy": 67.42
+    "female_life_exp": 67.42
   },
 
   "15": {
@@ -140,7 +140,7 @@ var act_table = {
     "male_life_exp": 61.62,
     "female_death_prob": 0.000229,
     "females_remaining": 99214,
-    "life_expectancy": 66.44
+    "female_life_exp": 66.44
   },
 
   "16": {
@@ -149,7 +149,7 @@ var act_table = {
     "male_life_exp": 60.64,
     "female_death_prob": 0.000274,
     "females_remaining": 99191,
-    "life_expectancy": 65.45
+    "female_life_exp": 65.45
   },
 
   "17": {
@@ -158,7 +158,7 @@ var act_table = {
     "male_life_exp": 59.68,
     "female_death_prob": 0.000314,
     "females_remaining": 99164,
-    "life_expectancy": 64.47
+    "female_life_exp": 64.47
   },
 
   "18": {
@@ -167,7 +167,7 @@ var act_table = {
     "male_life_exp": 58.72,
     "female_death_prob": 0.000347,
     "females_remaining": 99133,
-    "life_expectancy": 63.49
+    "female_life_exp": 63.49
   },
 
   "19": {
@@ -176,7 +176,7 @@ var act_table = {
     "male_life_exp": 57.77,
     "female_death_prob": 0.000374,
     "females_remaining": 99098,
-    "life_expectancy": 62.51
+    "female_life_exp": 62.51
   },
 
   "20": {
@@ -185,7 +185,7 @@ var act_table = {
     "male_life_exp": 56.83,
     "female_death_prob": 0.000402,
     "females_remaining": 99061,
-    "life_expectancy": 61.53
+    "female_life_exp": 61.53
   },
 
   "21": {
@@ -194,7 +194,7 @@ var act_table = {
     "male_life_exp": 55.89,
     "female_death_prob": 0.000431,
     "females_remaining": 99021,
-    "life_expectancy": 60.56
+    "female_life_exp": 60.56
   },
 
   "22": {
@@ -203,7 +203,7 @@ var act_table = {
     "male_life_exp": 54.96,
     "female_death_prob": 0.000458,
     "females_remaining": 98979,
-    "life_expectancy": 59.58
+    "female_life_exp": 59.58
   },
 
   "23": {
@@ -212,7 +212,7 @@ var act_table = {
     "male_life_exp": 54.03,
     "female_death_prob": 0.000482,
     "females_remaining": 98933,
-    "life_expectancy": 58.61
+    "female_life_exp": 58.61
   },
 
   "24": {
@@ -221,7 +221,7 @@ var act_table = {
     "male_life_exp": 53.11,
     "female_death_prob": 0.000504,
     "females_remaining": 98886,
-    "life_expectancy": 57.64
+    "female_life_exp": 57.64
   },
 
   "25": {
@@ -230,7 +230,7 @@ var act_table = {
     "male_life_exp": 52.18,
     "female_death_prob": 0.000527,
     "females_remaining": 98836,
-    "life_expectancy": 56.67
+    "female_life_exp": 56.67
   },
 
   "26": {
@@ -239,7 +239,7 @@ var act_table = {
     "male_life_exp": 51.25,
     "female_death_prob": 0.000551,
     "females_remaining": 98784,
-    "life_expectancy": 55.70
+    "female_life_exp": 55.70
   },
 
   "27": {
@@ -248,7 +248,7 @@ var act_table = {
     "male_life_exp": 50.32,
     "female_death_prob": 0.000575,
     "females_remaining": 98729,
-    "life_expectancy": 54.73
+    "female_life_exp": 54.73
   },
 
   "28": {
@@ -257,7 +257,7 @@ var act_table = {
     "male_life_exp": 49.39,
     "female_death_prob": 0.000602,
     "females_remaining": 98673,
-    "life_expectancy": 53.76
+    "female_life_exp": 53.76
   },
 
   "29": {
@@ -266,7 +266,7 @@ var act_table = {
     "male_life_exp": 48.45,
     "female_death_prob": 0.000630,
     "females_remaining": 98613,
-    "life_expectancy": 52.79
+    "female_life_exp": 52.79
   },
 
   "30": {
@@ -275,7 +275,7 @@ var act_table = {
     "male_life_exp": 47.52,
     "female_death_prob": 0.000662,
     "females_remaining": 98551,
-    "life_expectancy": 51.82
+    "female_life_exp": 51.82
   },
 
   "31": {
@@ -284,7 +284,7 @@ var act_table = {
     "male_life_exp": 46.59,
     "female_death_prob": 0.000699,
     "females_remaining": 98486,
-    "life_expectancy": 50.86
+    "female_life_exp": 50.86
   },
 
   "32": {
@@ -293,7 +293,7 @@ var act_table = {
     "male_life_exp": 45.65,
     "female_death_prob": 0.000739,
     "females_remaining": 98417,
-    "life_expectancy": 49.89
+    "female_life_exp": 49.89
   },
 
   "33": {
@@ -302,7 +302,7 @@ var act_table = {
     "male_life_exp": 44.72,
     "female_death_prob": 0.000780,
     "females_remaining": 98344,
-    "life_expectancy": 48.93
+    "female_life_exp": 48.93
   },
 
   "34": {
@@ -311,7 +311,7 @@ var act_table = {
     "male_life_exp": 43.79,
     "female_death_prob": 0.000827,
     "females_remaining": 98267,
-    "life_expectancy": 47.97
+    "female_life_exp": 47.97
   },
 
   "35": {
@@ -320,7 +320,7 @@ var act_table = {
     "male_life_exp": 42.86,
     "female_death_prob": 0.000879,
     "females_remaining": 98186,
-    "life_expectancy": 47.01
+    "female_life_exp": 47.01
   },
 
   "36": {
@@ -329,7 +329,7 @@ var act_table = {
     "male_life_exp": 41.93,
     "female_death_prob": 0.000943,
     "females_remaining": 98100,
-    "life_expectancy": 46.05
+    "female_life_exp": 46.05
   },
 
   "37": {
@@ -338,7 +338,7 @@ var act_table = {
     "male_life_exp": 41.00,
     "female_death_prob": 0.001020,
     "females_remaining": 98007,
-    "life_expectancy": 45.09
+    "female_life_exp": 45.09
   },
 
   "38": {
@@ -347,7 +347,7 @@ var act_table = {
     "male_life_exp": 40.07,
     "female_death_prob": 0.001114,
     "females_remaining": 97907,
-    "life_expectancy": 44.14
+    "female_life_exp": 44.14
   },
 
   "39": {
@@ -356,7 +356,7 @@ var act_table = {
     "male_life_exp": 39.15,
     "female_death_prob": 0.001224,
     "females_remaining": 97798,
-    "life_expectancy": 43.19
+    "female_life_exp": 43.19
   },
 
   "40": {
@@ -365,7 +365,7 @@ var act_table = {
     "male_life_exp": 38.23,
     "female_death_prob": 0.001345,
     "females_remaining": 97679,
-    "life_expectancy": 42.24
+    "female_life_exp": 42.24
   },
 
   "41": {
@@ -374,7 +374,7 @@ var act_table = {
     "male_life_exp": 37.31,
     "female_death_prob": 0.001477,
     "females_remaining": 97547,
-    "life_expectancy": 41.29
+    "female_life_exp": 41.29
   },
 
   "42": {
@@ -383,7 +383,7 @@ var act_table = {
     "male_life_exp": 36.40,
     "female_death_prob": 0.001624,
     "females_remaining": 97403,
-    "life_expectancy": 40.35
+    "female_life_exp": 40.35
   },
 
   "43": {
@@ -392,7 +392,7 @@ var act_table = {
     "male_life_exp": 35.50,
     "female_death_prob": 0.001789,
     "females_remaining": 97245,
-    "life_expectancy": 39.42
+    "female_life_exp": 39.42
   },
 
   "44": {
@@ -401,7 +401,7 @@ var act_table = {
     "male_life_exp": 34.60,
     "female_death_prob": 0.001968,
     "females_remaining": 97071,
-    "life_expectancy": 38.49
+    "female_life_exp": 38.49
   },
 
   "45": {
@@ -410,7 +410,7 @@ var act_table = {
     "male_life_exp": 33.70,
     "female_death_prob": 0.002161,
     "females_remaining": 96880,
-    "life_expectancy": 37.56
+    "female_life_exp": 37.56
   },
 
   "46": {
@@ -419,7 +419,7 @@ var act_table = {
     "male_life_exp": 32.82,
     "female_death_prob": 0.002364,
     "females_remaining": 96671,
-    "life_expectancy": 36.64
+    "female_life_exp": 36.64
   },
 
   "47": {
@@ -428,7 +428,7 @@ var act_table = {
     "male_life_exp": 31.94,
     "female_death_prob": 0.002578,
     "females_remaining": 96442,
-    "life_expectancy": 35.73
+    "female_life_exp": 35.73
   },
 
   "48": {
@@ -437,7 +437,7 @@ var act_table = {
     "male_life_exp": 31.06,
     "female_death_prob": 0.002800,
     "females_remaining": 96193,
-    "life_expectancy": 34.82
+    "female_life_exp": 34.82
   },
 
   "49": {
@@ -446,7 +446,7 @@ var act_table = {
     "male_life_exp": 30.20,
     "female_death_prob": 0.003032,
     "females_remaining": 95924,
-    "life_expectancy": 33.92
+    "female_life_exp": 33.92
   },
 
   "50": {
@@ -455,7 +455,7 @@ var act_table = {
     "male_life_exp": 29.35,
     "female_death_prob": 0.003289,
     "females_remaining": 95633,
-    "life_expectancy": 33.02
+    "female_life_exp": 33.02
   },
 
   "51": {
@@ -464,7 +464,7 @@ var act_table = {
     "male_life_exp": 28.50,
     "female_death_prob": 0.003559,
     "females_remaining": 95319,
-    "life_expectancy": 32.13
+    "female_life_exp": 32.13
   },
 
   "52": {
@@ -473,7 +473,7 @@ var act_table = {
     "male_life_exp": 27.66,
     "female_death_prob": 0.003819,
     "females_remaining": 94980,
-    "life_expectancy": 31.24
+    "female_life_exp": 31.24
   },
 
   "53": {
@@ -482,7 +482,7 @@ var act_table = {
     "male_life_exp": 26.84,
     "female_death_prob": 0.004059,
     "females_remaining": 94617,
-    "life_expectancy": 30.36
+    "female_life_exp": 30.36
   },
 
   "54": {
@@ -491,7 +491,7 @@ var act_table = {
     "male_life_exp": 26.02,
     "female_death_prob": 0.004296,
     "females_remaining": 94233,
-    "life_expectancy": 29.48
+    "female_life_exp": 29.48
   },
 
   "55": {
@@ -500,7 +500,7 @@ var act_table = {
     "male_life_exp": 25.21,
     "female_death_prob": 0.004556,
     "females_remaining": 93828,
-    "life_expectancy": 28.60
+    "female_life_exp": 28.60
   },
 
   "56": {
@@ -509,7 +509,7 @@ var act_table = {
     "male_life_exp": 24.41,
     "female_death_prob": 0.004862,
     "females_remaining": 93400,
-    "life_expectancy": 27.73
+    "female_life_exp": 27.73
   },
 
   "57": {
@@ -518,7 +518,7 @@ var act_table = {
     "male_life_exp": 23.61,
     "female_death_prob": 0.005222,
     "females_remaining": 92946,
-    "life_expectancy": 26.87
+    "female_life_exp": 26.87
   },
 
   "58": {
@@ -527,7 +527,7 @@ var act_table = {
     "male_life_exp": 22.82,
     "female_death_prob": 0.005646,
     "females_remaining": 92461,
-    "life_expectancy": 26.00
+    "female_life_exp": 26.00
   },
 
   "59": {
@@ -536,7 +536,7 @@ var act_table = {
     "male_life_exp": 22.04,
     "female_death_prob": 0.006136,
     "females_remaining": 91939,
-    "life_expectancy": 25.15
+    "female_life_exp": 25.15
   },
 
   "60": {
@@ -545,7 +545,7 @@ var act_table = {
     "male_life_exp": 21.27,
     "female_death_prob": 0.006696,
     "females_remaining": 91375,
-    "life_expectancy": 24.30
+    "female_life_exp": 24.30
   },
 
   "61": {
@@ -554,7 +554,7 @@ var act_table = {
     "male_life_exp": 20.50,
     "female_death_prob": 0.007315,
     "females_remaining": 90763,
-    "life_expectancy": 23.46
+    "female_life_exp": 23.46
   },
 
   "62": {
@@ -563,7 +563,7 @@ var act_table = {
     "male_life_exp": 19.74,
     "female_death_prob": 0.007976,
     "females_remaining": 90099,
-    "life_expectancy": 22.63
+    "female_life_exp": 22.63
   },
 
   "63": {
@@ -572,7 +572,7 @@ var act_table = {
     "male_life_exp": 18.99,
     "female_death_prob": 0.008676,
     "females_remaining": 89380,
-    "life_expectancy": 21.81
+    "female_life_exp": 21.81
   },
 
   "64": {
@@ -581,7 +581,7 @@ var act_table = {
     "male_life_exp": 18.24,
     "female_death_prob": 0.009435,
     "females_remaining": 88605,
-    "life_expectancy": 20.99
+    "female_life_exp": 20.99
   },
 
   "65": {
@@ -590,7 +590,7 @@ var act_table = {
     "male_life_exp": 17.51,
     "female_death_prob": 0.010298,
     "females_remaining": 87769,
-    "life_expectancy": 20.19
+    "female_life_exp": 20.19
   },
 
   "66": {
@@ -599,7 +599,7 @@ var act_table = {
     "male_life_exp": 16.79,
     "female_death_prob": 0.011281,
     "females_remaining": 86865,
-    "life_expectancy": 19.39
+    "female_life_exp": 19.39
   },
 
   "67": {
@@ -608,7 +608,7 @@ var act_table = {
     "male_life_exp": 16.08,
     "female_death_prob": 0.012370,
     "females_remaining": 85885,
-    "life_expectancy": 18.61
+    "female_life_exp": 18.61
   },
 
   "68": {
@@ -617,7 +617,7 @@ var act_table = {
     "male_life_exp": 15.39,
     "female_death_prob": 0.013572,
     "females_remaining": 84823,
-    "life_expectancy": 17.84
+    "female_life_exp": 17.84
   },
 
   "69": {
@@ -626,7 +626,7 @@ var act_table = {
     "male_life_exp": 14.70,
     "female_death_prob": 0.014908,
     "females_remaining": 83672,
-    "life_expectancy": 17.08
+    "female_life_exp": 17.08
   },
 
   "70": {
@@ -635,7 +635,7 @@ var act_table = {
     "male_life_exp": 14.03,
     "female_death_prob": 0.016440,
     "females_remaining": 82424,
-    "life_expectancy": 16.33
+    "female_life_exp": 16.33
   },
 
   "71": {
@@ -644,7 +644,7 @@ var act_table = {
     "male_life_exp": 13.37,
     "female_death_prob": 0.018162,
     "females_remaining": 81069,
-    "life_expectancy": 15.59
+    "female_life_exp": 15.59
   },
 
   "72": {
@@ -653,7 +653,7 @@ var act_table = {
     "male_life_exp": 12.72,
     "female_death_prob": 0.020019,
     "females_remaining": 79597,
-    "life_expectancy": 14.87
+    "female_life_exp": 14.87
   },
 
   "73": {
@@ -662,7 +662,7 @@ var act_table = {
     "male_life_exp": 12.09,
     "female_death_prob": 0.022003,
     "females_remaining": 78003,
-    "life_expectancy": 14.16
+    "female_life_exp": 14.16
   },
 
   "74": {
@@ -671,7 +671,7 @@ var act_table = {
     "male_life_exp": 11.47,
     "female_death_prob": 0.024173,
     "females_remaining": 76287,
-    "life_expectancy": 13.47
+    "female_life_exp": 13.47
   },
 
   "75": {
@@ -680,7 +680,7 @@ var act_table = {
     "male_life_exp": 10.87,
     "female_death_prob": 0.026706,
     "females_remaining": 74443,
-    "life_expectancy": 12.79
+    "female_life_exp": 12.79
   },
 
   "76": {
@@ -689,7 +689,7 @@ var act_table = {
     "male_life_exp": 10.28,
     "female_death_prob": 0.029603,
     "females_remaining": 72455,
-    "life_expectancy": 12.13
+    "female_life_exp": 12.13
   },
 
   "77": {
@@ -698,7 +698,7 @@ var act_table = {
     "male_life_exp": 9.71,
     "female_death_prob": 0.032718,
     "females_remaining": 70310,
-    "life_expectancy": 11.48
+    "female_life_exp": 11.48
   },
 
   "78": {
@@ -707,7 +707,7 @@ var act_table = {
     "male_life_exp": 9.16,
     "female_death_prob": 0.036034,
     "females_remaining": 68010,
-    "life_expectancy": 10.86
+    "female_life_exp": 10.86
   },
 
   "79": {
@@ -716,7 +716,7 @@ var act_table = {
     "male_life_exp": 8.62,
     "female_death_prob": 0.039683,
     "females_remaining": 65559,
-    "life_expectancy": 10.24
+    "female_life_exp": 10.24
   },
 
   "80": {
@@ -725,7 +725,7 @@ var act_table = {
     "male_life_exp": 8.10,
     "female_death_prob": 0.043899,
     "females_remaining": 62957,
-    "life_expectancy": 9.65
+    "female_life_exp": 9.65
   },
 
   "81": {
@@ -734,7 +734,7 @@ var act_table = {
     "male_life_exp": 7.60,
     "female_death_prob": 0.048807,
     "females_remaining": 60194,
-    "life_expectancy": 9.07
+    "female_life_exp": 9.07
   },
 
   "82": {
@@ -743,7 +743,7 @@ var act_table = {
     "male_life_exp": 7.12,
     "female_death_prob": 0.054374,
     "females_remaining": 57256,
-    "life_expectancy": 8.51
+    "female_life_exp": 8.51
   },
 
   "83": {
@@ -752,7 +752,7 @@ var act_table = {
     "male_life_exp": 6.66,
     "female_death_prob": 0.060661,
     "females_remaining": 54142,
-    "life_expectancy": 7.97
+    "female_life_exp": 7.97
   },
 
   "84": {
@@ -761,7 +761,7 @@ var act_table = {
     "male_life_exp": 6.22,
     "female_death_prob": 0.067751,
     "females_remaining": 50858,
-    "life_expectancy": 7.45
+    "female_life_exp": 7.45
   },
 
   "85": {
@@ -770,7 +770,7 @@ var act_table = {
     "male_life_exp": 5.80,
     "female_death_prob": 0.075729,
     "females_remaining": 47412,
-    "life_expectancy": 6.95
+    "female_life_exp": 6.95
   },
 
   "86": {
@@ -779,7 +779,7 @@ var act_table = {
     "male_life_exp": 5.40,
     "female_death_prob": 0.084673,
     "females_remaining": 43822,
-    "life_expectancy": 6.48
+    "female_life_exp": 6.48
   },
 
   "87": {
@@ -788,7 +788,7 @@ var act_table = {
     "male_life_exp": 5.02,
     "female_death_prob": 0.094645,
     "females_remaining": 40111,
-    "life_expectancy": 6.03
+    "female_life_exp": 6.03
   },
 
   "88": {
@@ -797,7 +797,7 @@ var act_table = {
     "male_life_exp": 4.66,
     "female_death_prob": 0.105694,
     "females_remaining": 36315,
-    "life_expectancy": 5.61
+    "female_life_exp": 5.61
   },
 
   "89": {
@@ -806,7 +806,7 @@ var act_table = {
     "male_life_exp": 4.33,
     "female_death_prob": 0.117853,
     "females_remaining": 32477,
-    "life_expectancy": 5.22
+    "female_life_exp": 5.22
   },
 
   "90": {
@@ -815,7 +815,7 @@ var act_table = {
     "male_life_exp": 4.02,
     "female_death_prob": 0.131146,
     "females_remaining": 28649,
-    "life_expectancy": 4.85
+    "female_life_exp": 4.85
   },
 
   "91": {
@@ -824,7 +824,7 @@ var act_table = {
     "male_life_exp": 3.73,
     "female_death_prob": 0.145585,
     "females_remaining": 24892,
-    "life_expectancy": 4.50
+    "female_life_exp": 4.50
   },
 
   "92": {
@@ -833,7 +833,7 @@ var act_table = {
     "male_life_exp": 3.46,
     "female_death_prob": 0.161175,
     "females_remaining": 21268,
-    "life_expectancy": 4.19
+    "female_life_exp": 4.19
   },
 
   "93": {
@@ -842,7 +842,7 @@ var act_table = {
     "male_life_exp": 3.22,
     "female_death_prob": 0.177910,
     "females_remaining": 17840,
-    "life_expectancy": 3.89
+    "female_life_exp": 3.89
   },
 
   "94": {
@@ -851,7 +851,7 @@ var act_table = {
     "male_life_exp": 3.00,
     "female_death_prob": 0.195774,
     "females_remaining": 14666,
-    "life_expectancy": 3.63
+    "female_life_exp": 3.63
   },
 
   "95": {
@@ -860,7 +860,7 @@ var act_table = {
     "male_life_exp": 2.81,
     "female_death_prob": 0.213849,
     "females_remaining": 11795,
-    "life_expectancy": 3.39
+    "female_life_exp": 3.39
   },
 
   "96": {
@@ -869,7 +869,7 @@ var act_table = {
     "male_life_exp": 2.64,
     "female_death_prob": 0.231865,
     "females_remaining": 9273,
-    "life_expectancy": 3.18
+    "female_life_exp": 3.18
   },
 
   "97": {
@@ -878,7 +878,7 @@ var act_table = {
     "male_life_exp": 2.49,
     "female_death_prob": 0.249525,
     "females_remaining": 7123,
-    "life_expectancy": 2.98
+    "female_life_exp": 2.98
   },
 
   "98": {
@@ -887,7 +887,7 @@ var act_table = {
     "male_life_exp": 2.36,
     "female_death_prob": 0.266514,
     "females_remaining": 5345,
-    "life_expectancy": 2.81
+    "female_life_exp": 2.81
   },
 
   "99": {
@@ -896,7 +896,7 @@ var act_table = {
     "male_life_exp": 2.24,
     "female_death_prob": 0.282504,
     "females_remaining": 3921,
-    "life_expectancy": 2.65
+    "female_life_exp": 2.65
   },
 
   "100": {
@@ -905,7 +905,7 @@ var act_table = {
     "male_life_exp": 2.12,
     "female_death_prob": 0.299455,
     "females_remaining": 2813,
-    "life_expectancy": 2.49
+    "female_life_exp": 2.49
   },
 
   "101": {
@@ -914,7 +914,7 @@ var act_table = {
     "male_life_exp": 2.01,
     "female_death_prob": 0.317422,
     "females_remaining": 1971,
-    "life_expectancy": 2.35
+    "female_life_exp": 2.35
   },
 
   "102": {
@@ -923,7 +923,7 @@ var act_table = {
     "male_life_exp": 1.90,
     "female_death_prob": 0.336467,
     "females_remaining": 1345,
-    "life_expectancy": 2.21
+    "female_life_exp": 2.21
   },
 
   "103": {
@@ -932,7 +932,7 @@ var act_table = {
     "male_life_exp": 1.80,
     "female_death_prob": 0.356655,
     "females_remaining": 893,
-    "life_expectancy": 2.07
+    "female_life_exp": 2.07
   },
 
   "104": {
@@ -941,7 +941,7 @@ var act_table = {
     "male_life_exp": 1.70,
     "female_death_prob": 0.378055,
     "females_remaining": 574,
-    "life_expectancy": 1.94
+    "female_life_exp": 1.94
   },
 
   "105": {
@@ -950,7 +950,7 @@ var act_table = {
     "male_life_exp": 1.60,
     "female_death_prob": 0.400738,
     "females_remaining": 357,
-    "life_expectancy": 1.82
+    "female_life_exp": 1.82
   },
 
   "106": {
@@ -959,7 +959,7 @@ var act_table = {
     "male_life_exp": 1.51,
     "female_death_prob": 0.424782,
     "females_remaining": 214,
-    "life_expectancy": 1.70
+    "female_life_exp": 1.70
   },
 
   "107": {
@@ -968,7 +968,7 @@ var act_table = {
     "male_life_exp": 1.42,
     "female_death_prob": 0.450269,
     "females_remaining": 123,
-    "life_expectancy": 1.59
+    "female_life_exp": 1.59
   },
 
   "108": {
@@ -977,7 +977,7 @@ var act_table = {
     "male_life_exp": 1.34,
     "female_death_prob": 0.477285,
     "females_remaining": 68,
-    "life_expectancy": 1.48
+    "female_life_exp": 1.48
   },
 
   "109": {
@@ -986,7 +986,7 @@ var act_table = {
     "male_life_exp": 1.26,
     "female_death_prob": 0.505922,
     "females_remaining": 35,
-    "life_expectancy": 1.38
+    "female_life_exp": 1.38
   },
 
   "110": {
@@ -995,7 +995,7 @@ var act_table = {
     "male_life_exp": 1.18,
     "female_death_prob": 0.536278,
     "females_remaining": 17,
-    "life_expectancy": 1.28
+    "female_life_exp": 1.28
   },
 
   "111": {
@@ -1004,7 +1004,7 @@ var act_table = {
     "male_life_exp": 1.11,
     "female_death_prob": 0.568454,
     "females_remaining": 8,
-    "life_expectancy": 1.19
+    "female_life_exp": 1.19
   },
 
   "112": {
@@ -1013,7 +1013,7 @@ var act_table = {
     "male_life_exp": 1.03,
     "female_death_prob": 0.602561,
     "females_remaining": 3,
-    "life_expectancy": 1.10
+    "female_life_exp": 1.10
   },
 
   "113": {
@@ -1022,7 +1022,7 @@ var act_table = {
     "male_life_exp": 0.97,
     "female_death_prob": 0.638715,
     "females_remaining": 1,
-    "life_expectancy": 1.02
+    "female_life_exp": 1.02
   },
 
   "114": {
@@ -1031,7 +1031,7 @@ var act_table = {
     "male_life_exp": 0.90,
     "female_death_prob": 0.677038,
     "females_remaining": 1,
-    "life_expectancy": 0.94
+    "female_life_exp": 0.94
   },
 
   "115": {
@@ -1040,7 +1040,7 @@ var act_table = {
     "male_life_exp": 0.84,
     "female_death_prob": 0.717660,
     "females_remaining": 0,
-    "life_expectancy": 0.87
+    "female_life_exp": 0.87
   },
 
   "116": {
@@ -1049,7 +1049,7 @@ var act_table = {
     "male_life_exp": 0.78,
     "female_death_prob": 0.760720,
     "females_remaining": 0,
-    "life_expectancy": 0.79
+    "female_life_exp": 0.79
   },
 
   "117": {
@@ -1058,7 +1058,7 @@ var act_table = {
     "male_life_exp": 0.72,
     "female_death_prob": 0.806363,
     "females_remaining": 0,
-    "life_expectancy": 0.73
+    "female_life_exp": 0.73
   },
 
   "118": {
@@ -1067,7 +1067,7 @@ var act_table = {
     "male_life_exp": 0.67,
     "female_death_prob": 0.851378,
     "females_remaining": 0,
-    "life_expectancy": 0.67
+    "female_life_exp": 0.67
   },
 
   "119": {
@@ -1076,6 +1076,6 @@ var act_table = {
     "male_life_exp": 0.61,
     "female_death_prob": 0.893947,
     "females_remaining": 0,
-    "life_expectancy": 0.61
+    "female_life_exp": 0.61
   }
 };
