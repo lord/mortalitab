@@ -1,0 +1,21 @@
+body, html {
+  /*margin: 0;*/
+  background-color: #1F1F1F;
+  height: 100%;
+}
+
+.page {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.page>div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#canvas {
+  background-color: #67686C;
+  margin: 0 auto;
+  display: block;
+}
