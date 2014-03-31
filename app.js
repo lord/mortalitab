@@ -3,6 +3,7 @@ var getHoursLived = function(birthday) {
 };
 
 var renderLife = function() {
+  hideInfoForm();
   var browser_width = window.innerWidth ||
               html.clientWidth  ||
               body.clientWidth  ||
@@ -13,15 +14,17 @@ var renderLife = function() {
                body.clientHeight  ||
                screen.availHeight;
 
-  var birthday = new Date(prompt("What is ur birthday?"));
-  var sex = prompt("Are you a guurl or a boooy?");
+  var birthday = new Date(localStorage.getItem('birthday'));
+  var sex = localStorage.getItem('sex');
   var hours_lived = getHoursLived(birthday);
   var age = Math.floor(hours_lived / (365.24 * 24));
   var life_years;
-  if (sex == "guurl") {
+  if (sex == "female") {
     life_years = age + act_table[age].female_life_exp;
-  } else {
+  } else if (sex == "male") {
     life_years = age + act_table[age].male_life_exp;
+  } else {
+    life_years = age + (act_table[age].female_life_exp + act_table[age].male_life_exp) / 2;
   }
   var life_hours = life_years * 365.24 * 24;
 
@@ -59,10 +62,38 @@ var renderLife = function() {
   requestAnimationFrame(blink);
 };
 
+var submitInfoForm = function(e) {
+  e.preventDefault();
+  if (document.info_form.birthday.valueAsDate === null) {
+    alert('Please enter a birthday.');
+    return false;
+  }
+  if (document.info_form.sex.value === "") {
+    alert('Please enter a sex.');
+    return false;
+  }
+
+  localStorage.setItem('birthday', document.info_form.birthday.valueAsDate);
+  localStorage.setItem('sex', document.info_form.sex.value);
+
+  renderLife();
+  return true;
+};
+
+var showInfoForm = function(e) {
+  document.getElementById('info_form').style.display = "block";
+  document.getElementById('info_form').onsubmit = submitInfoForm;
+  document.getElementById('canvas').style.display = "none";
+};
+
+var hideInfoForm = function(e) {
+  document.getElementById('info_form').style.display = "none";
+  document.getElementById('canvas').style.display = "block";
+};
+
 window.onload = function() {
   if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null) {
-    document.getElementById('info_form').style.display = "block";
-    document.getElementById('canvas').style.display = "none";
+    showInfoForm();
   } else {
     renderLife();
   }
