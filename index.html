@@ -10,6 +10,19 @@
     <div class="page">
       <div>
         <canvas id="canvas"></canvas>
+        <form id="info_form">
+          <h3>Your birthday:</h3>
+          <input type="date" name="birthday">
+          <h3>Your sex:</h3>
+          <select name="sex" id="">
+            <option value="" disabled selected>--Select One--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="submit" value="Save">
+          <p>This information is stored on your computer and is not sent to any server. It is used to determine your life expectancy.</p>
+        </form>
       </div>
     </div>
   </body>

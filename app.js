@@ -13,9 +13,16 @@ var renderLife = function() {
                body.clientHeight  ||
                screen.availHeight;
 
-  var life_years = 80;
-  var birthday = new Date(1990, 1, 1);
+  var birthday = new Date(prompt("What is ur birthday?"));
+  var sex = prompt("Are you a guurl or a boooy?");
   var hours_lived = getHoursLived(birthday);
+  var age = Math.floor(hours_lived / (365.24 * 24));
+  var life_years;
+  if (sex == "guurl") {
+    life_years = age + act_table[age].female_life_exp;
+  } else {
+    life_years = age + act_table[age].male_life_exp;
+  }
   var life_hours = life_years * 365.24 * 24;
 
   var canvas_width = browser_width - 40;
@@ -53,5 +60,10 @@ var renderLife = function() {
 };
 
 window.onload = function() {
-  renderLife();
+  if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null) {
+    document.getElementById('info_form').style.display = "block";
+    document.getElementById('canvas').style.display = "none";
+  } else {
+    renderLife();
+  }
 };
