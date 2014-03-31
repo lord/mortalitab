@@ -41,6 +41,7 @@ var renderLife = function() {
   canny.height = canvas_height;
   canny.width = canvas_width;
   var ctx = canny.getContext("2d");
+  ctx.clearRect(0,0,canny.width, canny.height);
   ctx.fillStyle = "rgba(56, 56, 56, 1)";
   ctx.fillRect(0, 0, canvas_width, current_row);
   ctx.fillRect(0, current_row, current_col, 1);
@@ -48,20 +49,31 @@ var renderLife = function() {
   ctx.fillRect(current_col, current_row, 1, 1);
 
   var start_frame = new Date();
+  var stop_blinking = false;
   var blink = function() {
-    var dt = ((new Date()).getTime() - start_frame.getTime())/1000;
+    if (stop_blinking === false) {
+      var dt = ((new Date()).getTime() - start_frame.getTime())/1000;
 
-    var blink_opacity = (Math.sin(dt*3.142)/2)+0.5;
+      var blink_opacity = (Math.sin(dt*3.142)/2)+0.5;
 
-    ctx.fillStyle = "rgb(103, 104, 108)";
-    ctx.fillRect(current_col, current_row, 1, 1);
-    ctx.fillStyle = "rgba(255, 255, 255, " + blink_opacity + ")";
-    ctx.fillRect(current_col, current_row, 1, 1);
+      ctx.fillStyle = "rgb(103, 104, 108)";
+      ctx.fillRect(current_col, current_row, 1, 1);
+      ctx.fillStyle = "rgba(255, 255, 255, " + blink_opacity + ")";
+      ctx.fillRect(current_col, current_row, 1, 1);
 
-    requestAnimationFrame(blink);
+      requestAnimationFrame(blink);
+    }
   };
 
   requestAnimationFrame(blink);
+
+  var redrawLife = function() {
+    stop_blinking = true;
+    renderLife();
+  };
+
+  window.onresize = redrawLife;
+  setTimeout(redrawLife, 3600000 - (new Date()).getTime() % 3600000);
 };
 
 var submitInfoForm = function(e) {
