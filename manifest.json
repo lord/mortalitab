@@ -4,8 +4,12 @@
   "version": "1.0",
   // Recommended
   "description": "Replace your new tab page with a personal reminder that you will die.",
-  "chrome_url_overrides" : {
+  "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "options_page": "index.html#settings"
+  "options_page": "index.html#settings",
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  }
 }
