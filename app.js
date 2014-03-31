@@ -35,25 +35,11 @@ var renderLife = function() {
   ctx.fillStyle = "rgba(255, 255, 255, 1)";
   ctx.fillRect(current_col, current_row, 1, 1);
 
-  var last_frame = new Date();
-  var blink_opacity = 1;
-  var blink_going_up = false;
+  var start_frame = new Date();
   var blink = function() {
-    var dt = (new Date()).getTime() - last_frame.getTime();
-    last_frame = new Date();
-    if (blink_going_up) {
-      blink_opacity += dt / 1000;
-    } else {
-      blink_opacity -= dt / 1000;
-    }
+    var dt = ((new Date()).getTime() - start_frame.getTime())/1000;
 
-    if (blink_opacity > 1) {
-      blink_going_up = false;
-      blink_opacity = 1;
-    } else if (blink_opacity < 0) {
-      blink_going_up = true;
-      blink_opacity = 0;
-    }
+    var blink_opacity = (Math.sin(dt*3.142)/2)+0.5;
 
     ctx.fillStyle = "rgb(103, 104, 108)";
     ctx.fillRect(current_col, current_row, 1, 1);
