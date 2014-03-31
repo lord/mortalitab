@@ -1,4 +1,8 @@
-window.onload = function() {
+var getHoursLived = function(birthday) {
+  return Math.floor(((new Date()).getTime() - birthday.getTime()) / 3600000);
+};
+
+var renderLife = function() {
   var browser_width = window.innerWidth ||
               html.clientWidth  ||
               body.clientWidth  ||
@@ -11,7 +15,7 @@ window.onload = function() {
 
   var life_years = 80;
   var birthday = new Date(1990, 1, 1);
-  var hours_lived = Math.floor(((new Date()).getTime() - birthday.getTime()) / 3600000);
+  var hours_lived = getHoursLived(birthday);
   var life_hours = life_years * 365.24 * 24;
 
   var canvas_width = browser_width - 40;
@@ -60,4 +64,8 @@ window.onload = function() {
   };
 
   requestAnimationFrame(blink);
+};
+
+window.onload = function() {
+  renderLife();
 };
