@@ -1,6 +1,6 @@
 # Mortalitab
 
-[Download on the Chrome webstore](https://chrome.google.com/webstore/detail/mortalitab/adipogapgippjdckceoenmlkkhalpooe)
+[Download on the Chrome webstore](https://chrome.google.com/webstore/detail/mortalitab/adipogapgippjdckceoenmlkkhalpooe), or check out the [blog post](http://lord.io/blog/2014/mortalitab) about its creation.
 
 Replace your new tab page with a personal reminder that you will die. Build dread and stay humble throughout the day with the Mortalitab homepage replacement!
 
