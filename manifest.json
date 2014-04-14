@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Mortalitab",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Replace your new tab page with a personal reminder that you will die.",
   "chrome_url_overrides": {
     "newtab": "index.html"
