@@ -2,6 +2,10 @@ var getHoursLived = function(birthday) {
   return Math.floor(((new Date()).getTime() - birthday.getTime()) / 3600000);
 };
 
+var getHoursBetween = function(date1, date2) {
+  return Math.floor((date2.getTime() - date1.getTime()) / 3600000);
+};
+
 var renderLife = function() {
   var browser_width = window.innerWidth ||
               html.clientWidth  ||
@@ -36,6 +40,10 @@ var renderLife = function() {
   var current_row = Math.floor(hours_lived / canvas_width);
   var current_col = (hours_lived - (current_row * canvas_width))-1;
 
+  window.canvas_width = canvas_width;
+  window.canvas_height = canvas_height;
+  window.birthday = birthday;
+
   document.getElementById('weeks').textContent = canvas_width / 168;
 
   // Create canvas
@@ -43,6 +51,7 @@ var renderLife = function() {
   canny.style.height = canvas_height + "px";
   canny.style.width = canvas_width + "px";
   canny.innerHTML=""; // delete any existing elements
+  window.canny = canny;
 
   var rect;
 
@@ -70,6 +79,7 @@ var renderLife = function() {
   rect.style.left = current_col + "px";
   rect.style.top = current_row + "px";
   canny.appendChild(rect);
+  loadRedlist();
 
   var resizeWindow = function() {
     el = document.getElementById('tutorial');
@@ -88,25 +98,67 @@ var renderLife = function() {
   setTimeout(renderLife, 3600000 - (new Date()).getTime() % 3600000);
 };
 
-var submitInfoForm = function(e) {
-  e.preventDefault();
-  if (document.info_form.birthday.valueAsDate === null) {
-    alert('Please enter a birthday.');
-    return false;
-  }
-  if (document.info_form.sex.value === "") {
-    alert('Please enter a sex.');
-    return false;
-  }
-
-  localStorage.setItem('birthday', document.info_form.birthday.valueAsDate);
-  localStorage.setItem('sex', document.info_form.sex.value);
-  document.getElementById('tutorial').classList.add('first-time');
-
-  renderLife();
-  return true;
+var loadRedlist = function() {
+  chrome.history.search({
+    'text': '',
+    'maxResults': 1000000000,
+    'startTime': 0
+    },
+    processHistory.bind(null, 0)
+  );
 };
 
+// thanks to https://github.com/mihaip/theres-a-web-app-for-that/blob/master/extension/options.html#L216
+function processHistory(startIndex, historyItems) {
+  var endIndex = startIndex + 1000;
+  var isLastChunk = false;
+  // TODO LOAD THIS FROM LOCALSTORAGE
+  var redlist = ['metafilter.com', 'facebook.com'];
+  if (endIndex > historyItems.length) {
+    isLastChunk = true;
+    endIndex = historyItems.length;
+  }
+  for (var i = startIndex; i < endIndex; i++) {
+    var historyItem = historyItems[i];
+    if (historyItem.url) {
+      for(var r in redlist) {
+        if (historyItem.url.match("([./])" + escapeRegExp(redlist[r])) !== null) {
+          chrome.history.getVisits({"url": historyItem.url}, processVisits);
+          break;
+        }
+      }
+    }
+  }
+
+  if (!isLastChunk)
+    setTimeout(processHistory.bind(null, endIndex, historyItems), 0);
+}
+
+function processVisits(visits) {
+  for (var i in visits) {
+    addRedDot(visits[i].visitTime);
+  }
+}
+
+function addRedDot(date) {
+  var birthday = new Date(localStorage.getItem('birthday'));
+  var hours_lived = getHoursBetween(window.birthday, new Date(date));
+  var age = Math.floor(hours_lived / (365.24 * 24));
+
+  var current_row = Math.floor(hours_lived / window.canvas_width);
+  var current_col = (hours_lived - (current_row * window.canvas_width))-1;
+
+  // Add div for red dot
+  var rect = document.createElement("div");
+  rect.classList.add("tainted");
+  rect.style.left = current_col + "px";
+  rect.style.top = current_row + "px";
+  window.canny.appendChild(rect);
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
 
 window.onload = function() {
   if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null || localStorage.getItem('redlist') === null) {

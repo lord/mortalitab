@@ -62,6 +62,14 @@ body, html {
   height: 1px;
   width: 1px;
   -webkit-animation: heartbeat 1300ms ease 0s infinite normal;
+  z-index: 100;
+}
+
+#canny .tainted {
+  background-color: rgb(160, 0, 0);
+  position: absolute;
+  height: 1px;
+  width: 1px;
 }
 
 #settings_form {
