@@ -44,9 +44,22 @@ body, html {
  -webkit-animation-fill-mode: forwards;
 }
 
-#canvas {
+#canny {
   background-color: #343434;
   margin: 0 auto;
+  position: relative;
+}
+
+#canny .past {
+  background-color: rgb(37, 37, 37);
+  position: absolute;
+}
+
+#canny .current {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  height: 1px;
+  width: 1px;
 }
 
 #info_form {

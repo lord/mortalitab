@@ -3,7 +3,6 @@ var getHoursLived = function(birthday) {
 };
 
 var renderLife = function() {
-  hideInfoForm();
   var browser_width = window.innerWidth ||
               html.clientWidth  ||
               body.clientWidth  ||
@@ -39,40 +38,38 @@ var renderLife = function() {
 
   document.getElementById('weeks').textContent = canvas_width / 168;
 
-  var canny = document.getElementById('canvas');
-  canny.height = canvas_height;
-  canny.width = canvas_width;
-  var ctx = canny.getContext("2d");
-  ctx.clearRect(0,0,canny.width, canny.height);
-  ctx.fillStyle = "rgb(37, 37, 37)";
-  ctx.fillRect(0, 0, canvas_width, current_row);
-  ctx.fillRect(0, current_row, current_col, 1);
-  ctx.fillStyle = "rgba(255, 255, 255, 1)";
-  ctx.fillRect(current_col, current_row, 1, 1);
+  // Create canvas
+  var canny = document.getElementById('canny');
+  canny.style.height = canvas_height + "px";
+  canny.style.width = canvas_width + "px";
+  canny.innerHTML=""; // delete any existing elements
 
-  var start_frame = new Date();
-  var stop_blinking = false;
-  var blink = function() {
-    if (stop_blinking === false) {
-      var dt = ((new Date()).getTime() - start_frame.getTime())/1000;
+  var rect;
 
-      var blink_opacity = (Math.sin(dt*3.142)/2)+0.5;
+  // Add div for dead block behind
+  rect = document.createElement("div");
+  rect.classList.add("past");
+  rect.style.left = "0px";
+  rect.style.top = "0px";
+  rect.style.width = canvas_width + "px";
+  rect.style.height = current_row + "px";
+  canny.appendChild(rect);
 
-      ctx.fillStyle = "#343434";
-      ctx.fillRect(current_col, current_row, 1, 1);
-      ctx.fillStyle = "rgba(255, 255, 255, " + blink_opacity + ")";
-      ctx.fillRect(current_col, current_row, 1, 1);
+  // Add div for dead line in current row
+  rect = document.createElement("div");
+  rect.classList.add("past");
+  rect.style.left = "0px";
+  rect.style.top = current_row + "px";
+  rect.style.width = current_col + "px";
+  rect.style.height = "1px";
+  canny.appendChild(rect);
 
-      requestAnimationFrame(blink);
-    }
-  };
-
-  requestAnimationFrame(blink);
-
-  var redrawLife = function() {
-    stop_blinking = true;
-    renderLife();
-  };
+  // Add div for current hour
+  rect = document.createElement("div");
+  rect.classList.add("current");
+  rect.style.left = current_col + "px";
+  rect.style.top = current_row + "px";
+  canny.appendChild(rect);
 
   var resizeWindow = function() {
     el = document.getElementById('tutorial');
@@ -84,11 +81,11 @@ var renderLife = function() {
 
     el.classList.add('visible');
 
-    redrawLife();
+    renderLife();
   };
 
   window.onresize = resizeWindow;
-  setTimeout(redrawLife, 3600000 - (new Date()).getTime() % 3600000);
+  setTimeout(renderLife, 3600000 - (new Date()).getTime() % 3600000);
 };
 
 var submitInfoForm = function(e) {
@@ -110,11 +107,6 @@ var submitInfoForm = function(e) {
   return true;
 };
 
-
-var hideInfoForm = function(e) {
-  document.getElementById('canvas').style.display = "block";
-  document.location.hash = "";
-};
 
 window.onload = function() {
   if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null || document.location.hash === "#settings") {
