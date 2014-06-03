@@ -23,4 +23,10 @@ var submitInfoForm = function(e) {
 
 window.onload = function() {
   document.getElementById("info_form").onsubmit = submitInfoForm;
+  if (localStorage.getItem('birthday')) {
+    document.info_form.birthday.valueAsDate = new Date(localStorage.getItem('birthday'));
+  }
+  if (localStorage.getItem('sex')) {
+    document.info_form.sex.value = localStorage.getItem('sex');
+  }
 };
