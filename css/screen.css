@@ -47,11 +47,9 @@ body, html {
 #canvas {
   background-color: #343434;
   margin: 0 auto;
-  display: block;
 }
 
 #info_form {
-  display: none;
   margin: 0 auto;
   width: 300px;
   color: #bbb;
