@@ -30,7 +30,7 @@ var renderLife = function() {
 
   var canvas_width = browser_width;
   canvas_width -= canvas_width % 168;
-  canvas_width = Math.min(canvas_width, 1008);
+  canvas_width = Math.min(canvas_width, 1176);
   canvas_width = Math.max(canvas_width, 168);
   var canvas_height = Math.ceil(life_hours / canvas_width);
 
