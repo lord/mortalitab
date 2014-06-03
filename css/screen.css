@@ -108,8 +108,8 @@ body, html {
 @-webkit-keyframes heartbeat {
   0%  { opacity: 0.1; }
   14% { opacity: 1; }
-  28% { opacity: 0.15; }
+  28% { opacity: 0.1; }
   42% { opacity: 1; }
-  70% { opacity: 0.15; }
+  70% { opacity: 0.1; }
   100%{ opacity: 0.1; }
 }
