@@ -8,7 +8,7 @@
   },
   "options_page": "index.html#settings",
   "icons": {
-    "48": "48.png",
-    "128": "128.png"
+    "48": "assets/48.png",
+    "128": "assets/128.png"
   }
 }
