@@ -2,6 +2,7 @@ body, html {
   /*margin: 0;*/
   background-color: #101010;
   height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .page {
@@ -69,12 +70,29 @@ body, html {
   color: #bbb;
 }
 
-#settings_form input {
+#settings_form h3 {
+  margin: 1.2em 0 0.6em;
+}
+
+#settings_form p {
+  line-height: 1.6;
+}
+
+#settings_form input, #settings_form textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 0.3em 0.5em;
   background-color: #333;
   border: none;
+  outline: none;
+}
+
+#settings_form textarea {
+  padding: 0.5em;
+}
+
+#settings_form input:focus, #settings_form textarea:focus {
+  outline: 1px solid #888;
 }
 
 #settings_form input[type=submit] {
@@ -109,4 +127,18 @@ body, html {
   42% { opacity: 1; }
   70% { opacity: 0.1; }
   100%{ opacity: 0.1; }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  99% {
+    opacity: 0;
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
 }
