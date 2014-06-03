@@ -109,7 +109,7 @@ var submitInfoForm = function(e) {
 
 
 window.onload = function() {
-  if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null || document.location.hash === "#settings") {
+  if (localStorage.getItem('birthday') === null || localStorage.getItem('sex') === null || localStorage.getItem('redlist') === null) {
     window.location = "settings.html";
   } else {
     renderLife();
