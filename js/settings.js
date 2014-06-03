@@ -4,17 +4,17 @@ var getHoursLived = function(birthday) {
 
 var submitInfoForm = function(e) {
   e.preventDefault();
-  if (document.info_form.birthday.valueAsDate === null) {
+  if (document.settings_form.birthday.valueAsDate === null) {
     alert('Please enter a birthday.');
     return false;
   }
-  if (document.info_form.sex.value === "") {
+  if (document.settings_form.sex.value === "") {
     alert('Please enter a sex.');
     return false;
   }
 
-  localStorage.setItem('birthday', document.info_form.birthday.valueAsDate);
-  localStorage.setItem('sex', document.info_form.sex.value);
+  localStorage.setItem('birthday', document.settings_form.birthday.valueAsDate);
+  localStorage.setItem('sex', document.settings_form.sex.value);
 
   window.location = "index.html";
   return true;
@@ -22,11 +22,11 @@ var submitInfoForm = function(e) {
 
 
 window.onload = function() {
-  document.getElementById("info_form").onsubmit = submitInfoForm;
+  document.getElementById("settings_form").onsubmit = submitInfoForm;
   if (localStorage.getItem('birthday')) {
-    document.info_form.birthday.valueAsDate = new Date(localStorage.getItem('birthday'));
+    document.settings_form.birthday.valueAsDate = new Date(localStorage.getItem('birthday'));
   }
   if (localStorage.getItem('sex')) {
-    document.info_form.sex.value = localStorage.getItem('sex');
+    document.settings_form.sex.value = localStorage.getItem('sex');
   }
 };
