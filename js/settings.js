@@ -15,7 +15,6 @@ var submitInfoForm = function(e) {
 
   localStorage.setItem('birthday', document.settings_form.birthday.valueAsDate);
   localStorage.setItem('sex', document.settings_form.sex.value);
-  localStorage.setItem('redlist', document.settings_form.redlist.value);
 
   window.location = "index.html";
   return true;
@@ -30,9 +29,4 @@ window.onload = function() {
   if (localStorage.getItem('sex')) {
     document.settings_form.sex.value = localStorage.getItem('sex');
   }
-  if (localStorage.getItem('redlist') === null) {
-    localStorage.setItem('redlist', "facebook.com\nreddit.com\ntwitter.com");
-  }
-
-  document.settings_form.redlist.value = localStorage.getItem('redlist');
 };
