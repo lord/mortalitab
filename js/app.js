@@ -38,7 +38,7 @@ var renderLife = function() {
   var canvas_height = Math.ceil(life_hours / canvas_width);
 
   var current_row = Math.floor(hours_lived / canvas_width);
-  var current_col = (hours_lived - (current_row * canvas_width))-1;
+  var current_col = (hours_lived - (current_row * canvas_width));
 
   window.canvas_width = canvas_width;
   window.canvas_height = canvas_height;
