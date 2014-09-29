@@ -7,15 +7,8 @@ var getHoursBetween = function(date1, date2) {
 };
 
 var renderLife = function() {
-  var browser_width = window.innerWidth ||
-              html.clientWidth  ||
-              body.clientWidth  ||
-              screen.availWidth;
-
-  var browser_height = window.innerHeight ||
-               html.clientHeight  ||
-               body.clientHeight  ||
-               screen.availHeight;
+  var browser_width = window.innerWidth;
+  var browser_height = window.innerHeight;
 
   var birthday = new Date(localStorage.getItem('birthday'));
   var sex = localStorage.getItem('sex');
