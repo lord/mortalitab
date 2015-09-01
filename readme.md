@@ -23,4 +23,4 @@ FEATURES
 
 KEEP IN TOUCH
 
-Follow us on Twitter! For updates! At @rlordio
+Follow us on Twitter! For updates! At [@rl0rd](https://twitter.com/rl0rd)
